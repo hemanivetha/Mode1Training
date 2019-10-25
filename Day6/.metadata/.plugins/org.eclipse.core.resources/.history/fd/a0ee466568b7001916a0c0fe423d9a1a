@@ -1,0 +1,12 @@
+package com.hcl.project;
+
+import java.util.List;
+
+public class StudentDAO {
+	
+	static List<Student> lstStudent = null;
+	static{
+		l
+	}
+
+}

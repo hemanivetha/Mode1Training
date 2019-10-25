@@ -1,0 +1,40 @@
+package com.hcl.bank;
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+
+import org.junit.Test;
+
+public class AccountsTestCase {
+	
+	@Test
+	public void testGenerateAccountNo(){
+		Connection con=Connection.getConnection();
+		
+	}
+
+	@Test
+	public void testGettersandSetters() {
+		Accounts objAccounts=new Accounts();
+		objAccounts.setAccountNo(1);
+		objAccounts.setFirstName("Hema");
+		objAccounts.setLastName("Jayakumar");
+		objAccounts.setCity("Chennai");
+		objAccounts.setState("TamilNadu");
+		objAccounts.setAmount(6345);
+		objAccounts.setCheqFacil("Yes");
+		objAccounts.setAccountType("Savings");
+		
+		assertEquals(1, objAccounts.getAccountNo());
+		assertEquals("Hema", objAccounts.getFirstName());
+		assertEquals("Jayakumar", objAccounts.getLastName());
+		assertEquals("Chennai", objAccounts.getCity());
+		assertEquals("TamilNadu", objAccounts.getState());
+		assertEquals(6345, objAccounts.getAmount());
+		assertEquals("Yes", objAccounts.getCheqFacil());
+		assertEquals("Savings", objAccounts.getAccountType());
+		
+	}
+
+}

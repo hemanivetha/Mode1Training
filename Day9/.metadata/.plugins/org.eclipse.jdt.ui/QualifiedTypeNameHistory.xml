@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ResourceBundle"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.hcl.bank.DaoConnection"/>
+<fullyQualifiedTypeName name="com.hcl.bank.AccountDAO"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="com.hcl.junitpractice.Data"/>
+<fullyQualifiedTypeName name="com.hcl.bank.Accounts"/>
+<fullyQualifiedTypeName name="com.hcl.bank.AccountBAL"/>
+<fullyQualifiedTypeName name="com.hcl.inventory.Stock"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.hcl.inventory.StockBAL"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+</qualifiedTypeNameHistroy>

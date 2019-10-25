@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+   grid-column-gap: 10%;
+  height: 300px; /* Should be removed. Only for demonstration */
+   margin: 6px;  
+
+}
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+   grid-column-gap: 10%;
+  height: 300px; /* Should be removed. Only for demonstration */
+     margin: 6px;
+
+}
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+   grid-column-gap: 10%;
+  height: 300px; /* Should be removed. Only for demonstration */
+     margin: 6px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+    .header {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+ height: 30%;
+ width: 370px;
+}
+   
+</style>
+</head><p>&nbsp;</p>
+  <div class="header" >
+</div>
+  <p>&nbsp;</p>
+<div class="row">
+<div class="column1" style="background-color: #ff0000; width: 100px;">
+</div>
+<div class="column2" style="background-color: #00ff00; width: 150px;">
+</div>
+<div class="column3" style="background-color: #0000ff; width: 100px;">
+</div>
+  <p>&nbsp;</p>
+ 
+</div>

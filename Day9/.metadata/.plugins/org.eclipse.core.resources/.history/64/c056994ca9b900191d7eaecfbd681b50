@@ -1,0 +1,26 @@
+package com.hcl.bank;
+
+public class AccountBAL {
+	
+	public static String closeAccountDao(int accountNo){
+		return new AccountDAO().closeAccountDao(accountNo);
+	}
+	
+	public static String updateAccountBal(int accountNo,String city,String state){
+		return new AccountDAO().updateAccountDao(accountNo, city, state);
+	}
+	
+	public static Accounts searchAccountsBal(int accountNo){
+		return new AccountDAO().searchAccountDao(accountNo);
+	}
+	
+	public static String createAccountBal(Accounts objAccounts){
+		return new AccountDAO().createAccountDao(objAccounts);
+		
+	}
+	
+	public static int generateAccountBal(){
+		return new AccountDAO().generateAccountNoDao();
+	}
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="NameForm">
+<center>
+<table border="3">
+<th colspan="2">
+Name Form:
+</th>
+
+<tr>
+<th>First Name</th>
+<td>
+<input type="text" names="firstName"/>
+</td>
+</tr>
+
+<tr>
+<th>Last Name</th>
+<td>
+<input type="text" names="lastName"/>
+</td>
+</tr>
+
+<tr>
+<th>Full Name</th>
+<td>
+<input type="text" names="fullName"/>
+</td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>

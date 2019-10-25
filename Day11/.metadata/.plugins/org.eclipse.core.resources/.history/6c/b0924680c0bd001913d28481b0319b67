@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js8.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="NameForm">
+<center>
+<table border="3">
+<th colspan="2">
+Name Form
+</th>
+
+<tr>
+<th>First Name</th>
+<td>
+<input type="text" name="firstName" autofocus="autofocus"/>
+</td>
+</tr>
+
+<tr>
+<th>Last Name</th>
+<td>
+<input type="text" name="lastName" onblur="fullName()"/>
+</td>
+</tr>
+
+<tr>
+<th>Full Name</th>
+<td>
+<input type="text" name="fullName" />
+<span id=""></span>
+</td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>

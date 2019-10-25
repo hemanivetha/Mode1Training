@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="formData">
+<center>
+<span id="res"></span>
+<br/><br/>
+Names:
+<select name="names">
+<option value="Hema" >Hema</option>
+<option value="Nivetha" >Nivetha</option>
+<option value="Priya" >Priya</option>
+<option value="Booma" >Booma</option>
+</select>
+</center>
+</form>
+</body>
+</html>

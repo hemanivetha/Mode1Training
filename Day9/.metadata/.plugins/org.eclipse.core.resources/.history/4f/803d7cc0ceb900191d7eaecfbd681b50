@@ -1,0 +1,76 @@
+package com.hcl.inventory;
+
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.hcl.inventory.Stock;
+import com.hcl.inventory.DaoConnection;
+
+
+public class StockDAO {
+	
+	PreparedStatement pst;
+	Connection con;
+	
+	public Stock searchStockDao(int stockId){
+		con=DaoConnection.getConnection();
+		String cmd="select * from Stock where stockid=?";
+		Stock objStock=null;
+		pst=con.prepareStatement(cmd);
+	}
+	
+	public String createItemNameDao(Stock objStock){
+		con=DaoConnection.getConnection();
+		String cmd="insert into stock(stockid,itemName,price,quantityAvail)"
+				+ "values(?,?,?,?)";
+		String result="";
+		try {
+			PreparedStatement pst=con.prepareStatement(cmd);
+			pst.setString(1, objStock.getStockId());
+			pst.setString(2, objStock.getItemName());
+			pst.setDouble(3, objStock.getPrice());
+			pst.setInt(4, objStock.getQuantityAvail());
+			pst.executeUpdate();
+			result="Stock Created Successfully";
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			result=e.getMessage();
+		}
+		return result;
+	}
+	
+	
+	public String generateStockIdDao(){
+		con=DaoConnection.getConnection();
+		String stockId;
+		String cmd="select max(stockid) sid from stock";
+		String stid="";
+		try {
+			PreparedStatement pst=con.prepareStatement(cmd);
+			ResultSet rs=pst.executeQuery();
+			rs.next();
+			stid=rs.getString("sid");
+			int id=Integer.parseInt(stid.substring(1));
+			id++;
+			if(id >=1 && id <=9){
+				stid="s00"+id;
+			}
+			if(id >=10 && id <=99){
+				stid="s0"+id;
+			}
+			if(id >=100 && id <=999){
+				stid="s"+id;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return stid;
+	}
+
+}

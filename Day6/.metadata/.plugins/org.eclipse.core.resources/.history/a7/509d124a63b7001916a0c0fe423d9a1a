@@ -1,0 +1,44 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class LambdaEmploy {
+	
+	public static void main(String[] args) {
+		List<Employ> list=new ArrayList<Employ>();
+		
+		list.add(new Employ(1, "Hema", 12));
+		list.add(new Employ(2, "Priya", 24));
+		list.add(new Employ(3, "Shiva", 36));
+		
+		//Collections.sort(list,(p1,p2) ->{
+			//return p1.empno-p2.empno;
+		//});
+		//System.out.println("Order by empno");
+		//for(Employ e:list){
+			//System.out.println(e);
+		//}
+		
+		//Collections.sort(list, (p1,p2) -> {
+			//return p1.name.compareTo(p2.name);
+		//});
+		//System.out.println("Order by name wise");
+		//for(Employ e:list){
+			//System.out.println(e);
+		//}
+		//Collections.sort(list, (p1,p2) -> {
+			//return (int) (p1.basic-p2.basic);
+		//});
+		//System.out.println("Order by basic");
+		//for(Employ e:list){
+			//System.out.println(e);
+		//}
+		
+		list.stream().filter(p -> p.basic > 25).forEach(x ->{
+			System.out.println(x);
+		});
+	}
+
+}

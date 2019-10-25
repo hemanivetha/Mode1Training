@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="formLogin">
+<center>
+<table border="5">
+<tr>
+<th>User Name</th>
+<td>
+<input type="text" names="username"/>
+</td>
+</tr>
+<tr>
+<th>Password</th>
+<td>
+<input type="password" names="password"/>
+</td>
+</tr>
+</table>
+
+</center>
+</form>
+</body>
+</html>

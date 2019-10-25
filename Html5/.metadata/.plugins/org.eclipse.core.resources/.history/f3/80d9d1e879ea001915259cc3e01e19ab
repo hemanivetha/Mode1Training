@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="div.html">
+<center>
+<h1><b>Registration Form</b></h1>
+First Name:
+<input type="text" name="fname"/><br/><br/>
+Last Name:
+<input type="text" name="lname"/><br/><br/>
+Email:
+<input type="text" name="email"/><br/><br/>
+Password:
+<input type="password" name=password/><br/><br/>
+Mobile No:
+<input type="text" name="mobno"/><br/><br/>
+<input type="submit" value="Submit"/>
+</center>
+</form>
+</body>
+</html>

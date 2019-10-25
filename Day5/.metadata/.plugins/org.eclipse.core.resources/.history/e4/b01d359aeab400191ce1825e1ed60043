@@ -1,0 +1,22 @@
+package com.hcl.ex;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class ObjInEx {
+	
+	public static void main(String[] args) {
+		try {
+			FileInputStream fin=new FileInputStream("c:/files/objout.txt");
+			ObjectInputStream objin=new ObjectInputStream(fin);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

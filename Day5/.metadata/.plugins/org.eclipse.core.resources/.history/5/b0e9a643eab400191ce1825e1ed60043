@@ -1,0 +1,13 @@
+package com.hcl.ex;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class ObjInEx {
+	
+	public static void main(String[] args) {
+		FileInputStream fin=new FileInputStream("c:/files/objout.txt");
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.java.practice;
+
+public class Attendance {
+	public static void show(int day,String...name){
+		for (String s : name) {
+			System.out.print(day+"" +s+" ");
+		}
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		show(1);
+		show(2,"Hema","Nivetha");
+		show(3,"Shiva","Subra","Manian");
+	}
+
+}

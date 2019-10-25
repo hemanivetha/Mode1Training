@@ -1,0 +1,44 @@
+package com.hcl.inventory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+public class StockDAO {
+	
+	PreparedStatement pst;
+	Connection con;
+	
+	
+	public String generateStockIdDao(){
+		con=DaoConnection.getConnection();
+		String stockId;
+		String cmd="select max(stockid) sid from stock";
+		String stid="";
+		try {
+			PreparedStatement pst=con.prepareStatement(cmd);
+			ResultSet rs=pst.executeQuery();
+			rs.next();
+			stid=rs.getString("sid");
+			int id=Integer.parseInt(stid.substring(1));
+			id++;
+			if(id >=1 && id <=9){
+				stid="s00"+id;
+			}
+			if(id >=10 && id <=99){
+				stid="s0"+id;
+			}
+			if(id >=100 && id <=999){
+				stid="s"+id;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return stid;
+	}
+
+}

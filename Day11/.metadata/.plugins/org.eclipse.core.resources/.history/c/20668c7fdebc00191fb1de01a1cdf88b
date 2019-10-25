@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="PersonalData" style="color:#0900C4;
+	font:Helvetica 12 pt;border:1px solid black;">
+	<b>Welcome to Personal Details Page</b><br />
+	<p>
+	Hi This is Hema from Pondicherry...
+	I have 10 years of industry experience
+	</p>
+	</div><br /><br />
+	
+	<div id="PersonalData" style="color:#FF0000;
+	font:Helvetica 12 pt;border:1px dotted black;">
+	<b>Welcome to Personal Details Page</b><br />
+	<p>
+	Hi This is Hema from Pondicherry...
+	I have 10 years of industry experience
+	</p>
+	</div><br /><br />
+	
+	<div id="PersonalData" style="color:#FF00FF;
+	font:Helvetica 12 pt;border:1px dashed black;">
+	<b>Welcome to Personal Details Page</b><br />
+	<p>
+	Hi This is Hema from Pondicherry...
+	I have 10 years of industry experience
+	</p>
+	</div><br /><br />
+</body>
+</html>

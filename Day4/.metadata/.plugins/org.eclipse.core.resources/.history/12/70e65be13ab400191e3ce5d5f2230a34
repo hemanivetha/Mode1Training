@@ -1,0 +1,65 @@
+package com.hcl.ex;
+ /**
+* Invalid exceptions
+* @author Coalesce
+* Solutions
+*/
+
+class NumberZeroException extends Exception{ 
+/**
+* If the number is zero,exception will be there
+* @param error list of arguments
+*/
+  public NumberZeroException(String error){ 
+    super(error);
+  }
+}
+
+class NegativeException extends Exception {  
+	
+/**
+* If the number is negative,exception will be there
+* @param error list of arguments
+*/
+  public NegativeException(String error) {     
+    super(error);
+  }
+}
+
+public class Custom { 
+
+public void sum(int a,int b) throws NegativeException,NumberZeroException {   
+	
+    /**
+* conditions to check the exception
+*/
+    int c;
+    boolean flag = true;
+    if (a < 0 || b < 0) { 
+      flag = false;
+      throw new NegativeException("Negative numbers are not allowed");
+    }
+    if (a == 0 || b == 0) {
+      flag = false;
+      throw new NumberZeroException("Zero is invalid");
+    }
+    if (flag == true) {
+      c = a + b;
+      System.out.println("Sum is " + c);
+    }
+  }
+	
+  /**
+  * parameters are passed
+  **/
+  public static void main(String[] args) {     
+    int a = -5;
+    int b = 0;
+    try { 
+      new Custom().sum(a,b);
+    } catch (NegativeException | NumberZeroException e) { 
+      e.printStackTrace();
+    }    	
+  }
+
+}

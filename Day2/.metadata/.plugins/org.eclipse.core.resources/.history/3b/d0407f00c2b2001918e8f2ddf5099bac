@@ -1,0 +1,44 @@
+package com.hcl.inheritance;
+
+class C1{
+	public int a=9;
+	private int b=2;
+	protected int c=4;
+	public void show1(){
+		System.out.println("Public "+a);
+		System.out.println("Private "+b);
+		System.out.println("Protected "+c);
+		System.out.println("Default "+d);
+		
+	}
+}
+class C2{
+	public void show2(){
+		System.out.println("Public "+a);
+		System.out.println("Private "+b);
+		System.out.println("Protected "+c);
+		System.out.println("Default "+d);
+	}
+}
+class C3 extends C1{
+	public void show3(){
+		System.out.println("Public "+a);
+		System.out.println("Private "+b);
+		System.out.println("Protected "+c);
+		System.out.println("Default "+d);
+		
+	}
+}
+public class AccessSpecifiers {
+	
+	public static void main(String[] args) {
+		int d=6;
+		C1 obj1=new C1();
+		obj1.show1();
+		C2 obj2=new C2();
+		obj2.show2();
+		C3 obj3=new C3();
+		obj3.show3();
+	}
+
+}

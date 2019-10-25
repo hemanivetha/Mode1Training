@@ -1,0 +1,16 @@
+package com.hcl.Boxing;
+
+public class Quiz1 {
+	
+	public void show(Object x){
+		System.out.println("Object "+x);
+	}
+	public void show(int x){
+		System.out.println("Integer "+x);
+	}
+	
+	public static void main(String[] args) {
+		new Quiz1().show(12);
+	}
+
+}

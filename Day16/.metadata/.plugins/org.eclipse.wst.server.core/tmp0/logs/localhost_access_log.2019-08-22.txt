@@ -1,0 +1,11 @@
+127.0.0.1 - - [22/Aug/2019:14:29:05 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:29:07 +0530] "GET /DepartCrud/ HTTP/1.1" 200 1741
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:32:21 +0530] "GET /DepartCrud/ HTTP/1.1" 200 1893
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:32:24 +0530] "GET /DepartCrud/UpdateDept.jsp?deptno=1 HTTP/1.1" 200 1890
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:33:48 +0530] "GET /DepartCrud/UpdateDept.jsp?deptno=1 HTTP/1.1" 200 680
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:33:58 +0530] "GET /DepartCrud/ HTTP/1.1" 200 1890
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:34:02 +0530] "GET /DepartCrud/UpdateDept.jsp?deptno=1 HTTP/1.1" 200 680
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:34:20 +0530] "GET /DepartCrud/UpdateDept.jsp?deptno=1&dname=Gayathri&loc=Sirkali&head=Booma HTTP/1.1" 200 1898
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:34:25 +0530] "GET /DepartCrud/DeleteDept.jsp?deptno=76 HTTP/1.1" 200 1701
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:46:54 +0530] "GET /DepartCrud/AddDept.jsp HTTP/1.1" 200 645
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:47:28 +0530] "GET /DepartCrud/AddDept.jsp?deptno=2346&dname=Cse&loc=Kerala&head=priya HTTP/1.1" 200 1900

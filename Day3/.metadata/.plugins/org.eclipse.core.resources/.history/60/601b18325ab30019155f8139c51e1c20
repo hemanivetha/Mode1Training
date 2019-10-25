@@ -1,0 +1,49 @@
+package com.hcl.abs;
+
+abstract class Training{
+	abstract void name();
+	abstract void email();
+}
+
+class Hema extends Training{
+
+	@Override
+	void name() {
+		System.out.println("Name is Hema...");
+		
+	}
+
+	@Override
+	void email() {
+		System.out.println("hemanivetha25@gmail.com");
+		
+	}
+	
+}
+class Shiva extends Training{
+
+	@Override
+	void name() {
+		System.out.println("Name is Shiva...");
+		
+	}
+
+	@Override
+	void email() {
+		System.out.println("vinayshiva96@gmail.com");
+		
+	}
+	
+}
+
+public class AbsDemo {
+	public static void main(String[] args) {
+		Training t1=new Hema();
+		Training t2=new Shiva();
+		
+		
+		}
+	
+	
+
+}

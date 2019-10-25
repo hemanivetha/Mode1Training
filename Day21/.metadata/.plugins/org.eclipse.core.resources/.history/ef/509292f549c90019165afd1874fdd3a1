@@ -1,0 +1,10 @@
+package com.hcl.products;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainProg {
+	ApplicationContext ctx=new ClassPathXmlApplicationContext();
+	
+
+}

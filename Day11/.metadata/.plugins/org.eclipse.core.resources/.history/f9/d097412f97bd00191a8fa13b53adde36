@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script >
+function sum(){
+	
+	if(isNaN(formCalc.txtFirstNo.value)){
+		document.getElementById("err1").innerHTML="Only numbers Please";
+		return;
+	}else{
+		document.getElementById("err1").innerHTML="";
+	}
+	if(formCalc.txtFirstNo.value==""){
+		document.getElementById("err1").innerHTML="Please Enter First No";
+		return;
+	}else{
+		document.getElementById("err1").innerHTML="";
+	}
+	if(formCalc.txtSecondNo.value==""){
+		document.getElementById("err2").innerHTML="Please Enter Second No";
+		return;
+	}else{
+		document.getElementById("err2").innerHTML="";
+	}
+	var a,b,c;
+	a=parseInt(formCalc.txtFirstNo.value);
+	b=parseInt(formCalc.txtSecondNo.value);
+	c=a+b;
+	formCalc.txtResult.value=c;
+}
+
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form name="formCalc">
+<center>
+<table border="4">
+<tr>
+<th colspan="2">
+Calc Form
+</th>
+</tr>
+
+<tr>
+<th>FirstNo</th>
+<td>
+<input type="text" name="txtFirstNo"/>
+</td>
+</tr>
+
+<tr>
+<th>SecondNo</th>
+<td>
+<input type="text" name="txtSecondNo"/>
+</td>
+</tr>
+
+<tr>
+<th>Result</th>
+<td>
+<input type="text" name="txtResult"/>
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<input type="button" value="sum" onclick="sum()"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="sub" onclick="sub()"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="mul" onclick="mul()"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</table>
+</center>
+</form>
+</body>
+</html>

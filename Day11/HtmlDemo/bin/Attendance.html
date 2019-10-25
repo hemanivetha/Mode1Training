@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function attDemo(){
+	var res="";
+	if(frmAtt.chkAnisha.checked==true){
+		res+="Anisha is Present <br/>";
+	}else{
+		res+="Anisha is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+
+
+
+	if(frmAtt.chkRishab.checked==true){
+		res+="Rishab is Present <br/>";
+	}else{
+		res+="Rishab is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+
+
+
+	if(frmAtt.chkHema.checked==true){
+		res+="Hema is Present <br/>";
+	}else{
+		res+="Hema is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+
+
+
+	if(frmAtt.chkNivetha.checked==true){
+		res+="Nivetha is Present <br/>";
+	}else{
+		res+="Nivetha is Absent <br/>";
+	}
+	document.getElementById("res").innerHTML=res;
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmAtt">
+<center>
+Anisha:
+<input type="checkbox" name="chkAnisha" onchange="attDemo()"/>
+<br/><br/> 
+Rishab:
+<input type="checkbox" name="chkRishab" onchange="attDemo()"/>
+<br/><br/>
+Hema:
+<input type="checkbox" name="chkHema" onchange="attDemo()"/>
+<br/><br/>
+Nivetha:
+<input type="checkbox" name="chkNivetha" onchange="attDemo()"/>
+<br/><br/>
+<span id="res">
+
+</span>
+</center>
+</form>
+</body>
+</html>

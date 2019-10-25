@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="formLogin">
+<center>
+<table border="5">
+<th colspan="2">
+Login
+</th>
+<tr>
+<th>User Name</th>
+<td>
+<input type="text" names="username"/>
+</td>
+</tr>
+<tr>
+<th>Password</th>
+<td>
+<input type="password" names="password"/>
+</td>
+</tr>
+<tr>
+<th colspan="2">
+<input type="button" value="Login"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="Reset"/>
+</th>
+</table>
+
+</center>
+</form>
+</body>
+</html>

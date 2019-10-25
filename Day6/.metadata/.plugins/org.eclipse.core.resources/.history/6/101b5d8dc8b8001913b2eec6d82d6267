@@ -1,0 +1,62 @@
+package com.hcl.project;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerDAO {
+	
+	static List<Customer> lstCustomer = null;
+	static{
+		lstCustomer=new ArrayList<Customer>();
+	}
+	
+	public String addCustomerDao(Customer customer) {
+		lstCustomer.add(customer);
+		return "Customer created successfully";
+	}
+	
+	public List<Customer> showCustomerDao(){
+		return lstCustomer;
+	}
+	
+	public Customer searchCustomerDao(int custId){
+		Customer objCustomer=null;
+		for(Customer customer : lstCustomer){
+			if(customer.getCustId()== custId){
+				objCustomer=customer;
+			}
+		}
+		return objCustomer;
+		
+	}
+	
+	public String deleteCustomerDao(int custId){
+		Customer customer=searchCustomerDao(custId);
+		if(customer != null){
+			lstCustomer.remove(customer);
+			return "Customer Removed";
+		}
+		else{
+			return "Customer not found";
+		}
+	}
+	
+	public String updateCustomerDao(Customer objCustomer){
+		Customer customer =searchCustomerDao(objCustomer.getCustId());
+		if(customer != null){
+			for(Customer c: lstCustomer){
+				if(c.getCustId() == objCustomer.getCustId()){
+					c.setCustName(objCustomer.getCustName());
+					c.setAnnualPremium(objCustomer.getAnnualPremium());
+					c.setModalPremium(objCustomer.getModalPremium());
+					c.setPaymentMode(objCustomer.getPaymentMode());
+				}
+			}
+			return "Customer Record Updated..";
+		}
+		else{
+			return "Customer number not found";
+		}
+	}
+
+}

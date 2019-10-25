@@ -1,0 +1,22 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrListDemo {
+	public static void main(String[] args) {
+		List lstNames=new ArrayList();
+		lstNames.add("Hema");
+		lstNames.add("HemaSri");
+		lstNames.add("HemaPriya");
+		lstNames.add("HemaMalini");
+		lstNames.add("Hemalatha");
+		lstNames.add("HemaShiva");
+		System.out.println("Names are ");
+		for (Object object : lstNames) {
+			System.out.println(object);
+		}
+		
+	}
+
+}

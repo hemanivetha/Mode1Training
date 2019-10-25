@@ -1,0 +1,23 @@
+package com.hcl.Boxing;
+
+public class TimeZone {
+	int hrs,mins;
+
+	public TimeZone() {
+		this.hrs=3;
+		this.mins=40;
+	}
+
+	public TimeZone(int hrs, int mins) {
+		super();
+		this.hrs = hrs;
+		this.mins = mins;
+	}
+	
+	public static void main(String[] args) {
+		 TimeZone obj1=new TimeZone();
+		 TimeZone obj2=new TimeZone();
+		 System.out.println();
+	}
+
+}

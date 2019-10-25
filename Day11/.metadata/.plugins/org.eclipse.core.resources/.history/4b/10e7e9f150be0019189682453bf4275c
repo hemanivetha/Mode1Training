@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+var i=0;
+questions=[
+           "1.What is OOP",
+           "2.Who introduced JAVA",
+           "3.How to declare Generics",
+           "4.String.format() used for"
+           ];
+function show(){
+	document.getElementById("questions").innerHTML=questions[i];
+}
+function nextQuestion(){
+	i=i+1;
+	if(i<4){
+		show();
+	}else{
+		alert"Exam over..";
+	}
+}

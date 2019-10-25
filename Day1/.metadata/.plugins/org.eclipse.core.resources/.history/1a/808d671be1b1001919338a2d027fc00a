@@ -1,0 +1,21 @@
+package com.hcl.java;
+
+public class Sbexample {
+	
+	public void show(int age,String name,String course,String city){
+		System.out.println("Age :"+age);
+		System.out.println("Name :"+name);
+		System.out.println("Course :"+course);
+		System.out.println("City :"+city);
+	}
+	
+	
+	public static void main(String[] args) {
+		int age=12;
+		String name="Hema";
+		String course="Java";
+		String city="Bangalore";
+		new Sbexample().show(age, name, course, city);
+	}
+
+}

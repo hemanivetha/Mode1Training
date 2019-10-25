@@ -1,0 +1,8 @@
+package com.hcl.ex;
+
+public class NumberZeroException {
+	  public NumberZeroException(String error){ 
+		    super(error);
+		  }
+}
+

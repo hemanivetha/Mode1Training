@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd"> 
+<beans>
+<bean id="student1" class="com.hcl.bean.Student">
+<property name="sno" value="1"></property>
+<property name="name" value="Hema"></property>
+<property name="lunchBox">
+<bean class="LunchBox">
+<property name="snacks" value="Grill"></property>
+</bean>
+</property>
+</bean>
+
+<bean id="student2" class="com.hcl.bean.Student">
+<property name="sno" value="2"></property>
+<property name="name" value="Nivetha"></property>
+<property name="lunchBox">
+<bean class="LunchBox">
+<property name="snacks" value="Pizza"></property>
+</bean>
+</property>
+</bean>
+
+<bean id="student3" class="com.hcl.bean.Student">
+<property name="sno" value="3"></property>
+<property name="name" value="Shiva"></property>
+<property name="lunchBox">
+<bean class="LunchBox">
+<property name="snacks" value="Biriyani"></property>
+</bean>
+</property>
+</bean>
+
+<bean id="student4" class="com.hcl.bean.Student">
+<property name="sno" value="4"></property>
+<property name="name" value="HemaShiva"></property>
+<property name="lunchBox">
+<bean class="LunchBox">
+<property name="snacks" value="GrillBiriyani"></property>
+</bean>
+</property>
+</bean>
+
+</beans>

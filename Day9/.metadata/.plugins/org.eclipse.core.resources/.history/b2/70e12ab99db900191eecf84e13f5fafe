@@ -1,0 +1,9 @@
+package com.hcl.bank;
+
+public class AccountBAL {
+	
+	public static int generateAccountBal(){
+		return new AccountDAO().generateAccountNoDao();
+	}
+
+}
